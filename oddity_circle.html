@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oddity⨂Circle</title>
+
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      background-color: yellowgreen;
+    }
+
+    header {
+      background-color: aqua;
+      padding: 2px;
+      text-align: center;
+    }
+
+    #navbar {
+      padding: 3px;
+      border: none;
+      background-color: transparent;
+      font-size: 14pt;
+    }
+
+    #navbar:hover {
+      color: blue;
+    }
+
+    .column {
+      display: flex;
+      margin-left: 150px;
+      margin-right: 150px;
+      background-color: turquoise;
+      /* Arrange elements vertically */
+      flex-direction: column;
+      /* Stretch elements to fill width */
+      align-items: stretch;
+    }
+
+    #banner {
+      height: 200px;
+      background-color: yellow;
+    }
+
+    marquee {
+      background-color: red;
+    }
+
+    #home {
+      padding: 10px;
+      height: fit-content;
+    }
+
+    #overlay {
+      visibility: hidden;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: blue;
+      z-index: 99;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #login-overlay {
+      padding: 20px;
+      background-color: whitesmoke;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 2px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="column">
+
+    <!-- changelog -->
+    <marquee behavior="" direction="left">New Entity Found! All expedition team 7 over to shi district, NOW!</marquee>
+
+    <img src="" alt="" id="banner">
+
+    <header>
+      <button id="navbar">Home</button>
+      <button id="navbar" onclick="login()">Entities</button>
+      <button id="navbar">Staff</button>
+      <button id="navbar">Graveyard</button>
+    </header>
+
+    <div id="home">
+      <h1>Greetings and Salutations, </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ut quae dicta iusto reiciendis voluptas id,
+        illum nulla temporibus vel eveniet, voluptatibus quibusdam non. Magnam placeat soluta et at cumque?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        <!-- redacted message -->
+        <span
+          style="background-image: url('img/redacted_black.png'); background-repeat: repeat-x;">
+          This text is redacted.
+        </span>
+        Magnam ex ipsum enim harum dolor voluptate soluta
+        obcaecati eum cum laborum distinctio amet error neque iste itaque, nostrum qui nobis quas. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Esse aut accusamus temporibus in illum impedit, architecto ullam voluptate,
+        placeat ratione optio excepturi fugiat molestiae, itaque nihil recusandae doloremque dolores? Cumque.
+      </p>
+      <h1>Oddity⨂Circle</h1>
+    </div>
+
+  </div>
+
+  <div id="overlay">
+    <div id="login-overlay">
+      <p><i>uh oh! you need to be one of us to view our 
+        <span style="background-image: url('img/redacted_black.png'); background-repeat: repeat-x;">
+            data
+          </span>!!! <br> please fill in the blanks correctly :3</i></p>
+      <hr>
+      <label for="name">what is your name</label>
+      <input type="text" name="name"> <br>
+      <button type="submit" onclick="validate()">view</button>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const loginOverlay = document.getElementById("overlay");
+      loginOverlay.style.visibility = "visible";
+    }
+
+    function validate(name) {
+      //if name = name from list of names (array) then view, 
+      //else show other overlay saying "you're not one of us..."
+    }
+
+    function showDiv(divId) {
+      // Hide any currently visible divs
+      var divs = document.querySelectorAll("#myDiv, #myDiv2");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = "none";
+      }
+
+      // Show the specified div
+      var div = document.getElementById(divId);
+      div.style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>
