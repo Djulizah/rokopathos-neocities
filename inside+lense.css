@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  font-family: consolas;
+}
+
+.row {
+  display: flex;
+  margin: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100vh;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#thumbnails {
+  flex: 0.2;
+}
+
+#logo {
+  width: 250px;
+}
+
+#slogan {
+  font-size: small;
+}
+
+#date-list {
+  height: 750px;
+  overflow: auto;
+}
+
+#thumbnails-img {
+  height: 120px;
+  width: 160px;
+  border: 2px groove;
+  margin-top: 20px;
+}
+
+#thumbnails-btn {
+  border: 0px;
+  background-color: transparent;
+  font-size: 14pt;
+}
+
+#thumbnails-btn:hover {
+  color: magenta;
+}
+
+p:hover {
+  color: magenta;
+}
+
+#photo-entries {
+  flex: 0.8;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+}
+
+/* hidden all the entries */
+#myDiv,
+#myDiv2,
+#myDiv3,
+#myDiv4,
+#myDiv5,
+#myDiv6,
+#myDiv7, #myDiv8 {
+  display: none;
+}
+
+#entries-img {
+  border: 2px groove;
+  width: 900px;
+  height: 675px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+#error-overlay, #overlay {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: magenta;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+}
+
+#validate-overlay {
+  padding: 20px;
+  background-color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  text-align: center;
+}

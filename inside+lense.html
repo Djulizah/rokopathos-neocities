@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inside+lense.css">
+    <script src="inside+lense.js"></script>
+    <title>Inside+Lens</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- lists of dates with thumbnails -->
+        <div id="thumbnails" class="column">
+
+            <img id="logo" src="img/inside_lense/logo_temp.png" alt="logo">
+            <p id="slogan"><i>"Inside the Lens of Noire's"</i></p>
+            <hr>
+
+            <div id="date-list">
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-antonio.png" alt="jellyfishes">
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv')"><u>11633339</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-asad.png" alt="sea">
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv2')"><u>1268874</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-henry.png" alt="church">
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv3')"><u>19542927</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-maverick.png" alt="jellyfish">
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv4')"><u>10857200</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-pflower.png" alt="poppy"> <br>
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv5')"><u>39012</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" src="img/inside_lense/thumb-plight.png" alt="light">
+                    <button id="thumbnails-btn" onclick="showDiv('myDiv6')"><u>161154</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" alt="backyard"> <br>
+                    <button id="thumbnails-btn" onclick="viewRestricted()"><u>123123</u></button>
+                </div>
+                <div>
+                    <img id="thumbnails-img" alt="sunset"> <br>
+                    <button id="thumbnails-btn" onclick="viewRestricted()">01012020</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- noire's entries -->
+        <div id="photo-entries" class="column">
+
+            <div id="placeholder">
+                <!-- add this breaklines (when p tag is long) to add gap on top... need fixing -->
+                <!-- <br><br><br><br><br><br><br> -->
+                <img id="entries-img" src="img/inside_lense/placeholder_big.png" alt="placeholder" />
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ducimus
+                    quibusdam
+                    aliquid odit?
+                    Accusantium corrupti amet illum provident ut voluptate exercitationem sint delectus doloremque?
+                    Doloribus fugiat impedit fugit quidem? Quisquam. <br>
+                    <!-- overflow caption testing -->
+                    <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque iste odit repellat, excepturi culpa
+                    tenetur at praesentium quis iure, harum, consequatur suscipit! Ab, illo? Vero optio a quod quis
+                    alias! <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat enim laborum accusantium fugit,
+                    voluptatem, repellendus porro aspernatur nihil ea, temporibus minima optio recusandae vero nobis
+                    architecto eveniet. Praesentium, aperiam esse! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quas modi velit. Consectetur
+                    dolorum laboriosam tenetur magnam possimus placeat, suscipit molestias id maxime et, veritatis omnis
+                    fuga. Veritatis, quam vero?<br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae quisquam provident.
+                    Repellat porro ratione odio quo aspernatur itaque velit? Pariatur veniam laudantium aut odit
+                    adipisci laborum similique facere quo? -->
+                </p>
+            </div>
+            <div id="myDiv">
+                <img id="entries-img" src="img/inside_lense/antonio-friedmann.png" alt="jellyfishes" />
+                <h1>"jellyfishes"</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ducimus
+                    Accusantium corrupti amet illum provident ut voluptate exercitationem sint delectus doloremque?
+                    Doloribus fugiat impedit fugit quidem? Quisquam.</p>
+            </div>
+            <div id="myDiv2">
+                <img id="entries-img" src="img/inside_lense/asad.png" alt="sea" />
+                <h1>"sea"</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dicta neque
+                    aliquid saepe, perferendis molestias necessitatibus dolore laboriosam totam ut laudantium laborum
+                    adipisci alias exercitationem inventore quis blanditiis asperiores aperiam.</p>
+            </div>
+            <div id="myDiv3">
+                <img id="entries-img" src="img/inside_lense/henry-han.png" alt="church" />
+                <h1>"church"</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda
+                    accusantium maiores sint esse dolorem a placeat eaque quisquam laborum voluptatum est consequatur,
+                    repellat ad quo quia quam provident voluptate!</p>
+            </div>
+            <div id="myDiv4">
+                <img id="entries-img" src="img/inside_lense/maverick-f.png" alt="jellyfish" />
+                <h1>"Jellyfish"</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus
+                    culpa ad hic esse porro labore exercitationem tempore cupiditate nemo alias error enim tempora
+                    ipsum, maiores iusto at doloribus consequatur?</p>
+            </div>
+            <div id="myDiv5">
+                <img id="entries-img" src="img/inside_lense/pixabay-flower.png" alt="poppy" />
+                <h1>"poppy"</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ducimus
+                    Accusantium corrupti amet illum provident ut voluptate exercitationem sint delectus doloremque?
+                    Doloribus fugiat impedit fugit quidem? Quisquam.<br>
+                </p>
+            </div>
+            <div id="myDiv6">
+                <img id="entries-img" src="img/inside_lense/pixabay-light.png" alt="light" />
+                <h1>"light"</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odio ipsum
+                    magnam, voluptatem sunt sed hic autem dolore dolorem nulla delectus aspernatur consectetur labore
+                    repudiandae illo obcaecati tenetur in ducimus.</p>
+            </div>
+            <div id="myDiv7">
+                <img id="entries-img" src="" alt="">
+                <h1>"BACKYARD"</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ab aliquam eaque nesciunt! Nesciunt qui
+                    reiciendis excepturi. Quas, delectus blanditiis ipsa esse eveniet earum, necessitatibus asperiores
+                    placeat inventore ex aliquid!</p>
+            </div>
+            <div id="myDiv8">
+                <img id="entries-img" alt="">
+                <h1>"SUNSET"</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rem nostrum minus debitis illo
+                    repudiandae itaque deserunt, nisi ut iure? Delectus temporibus sunt a enim aut quos doloremque
+                    consequuntur vero!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- overlay for restricted images -->
+    <div id="overlay">
+        <div id="validate-overlay">
+            <label for="password">password</label>
+            <input id="password" type="password" name="password">
+            <button type="submit" onclick="validate()">view</button>
+        </div>
+    </div>
+
+    <!-- error overlay -->
+    <div id="error-overlay">
+        <div id="validate-overlay">
+            <button onclick="out()">get out</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
