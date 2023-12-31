@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prelude</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: consolas;
+        }
+
+        body {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        hr,
+        img,
+        p,
+        button {
+            margin: 5px;
+        }
+
+        #thumb-gallery {
+            height: 200px;
+            width: 200px;
+            border-style: groove;
+        }
+
+        #thumb-gallery:hover {
+            scale: 1.1;
+        }
+
+        #banners {
+            margin: 20px;
+        }
+
+        div {
+            display: inline-table;
+            text-align: center;
+            padding: 5px;
+        }
+
+        button {
+            border: 0px;
+            background-color: transparent;
+            font-size: 14pt;
+        }
+
+        button:hover {
+            color: magenta;
+        }
+
+        #sections {
+            justify-content: center;
+        }
+
+        #overview,
+        #sections {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><a href="">Rokopathos</a> | Roko OCs Archive</h1>
+
+    <div>
+        <p>
+            <button onclick="showDiv('overview')"><u>overview</u></button>
+            \
+            <button onclick="showDiv('sections')"><u>sections</u></button>
+            \
+            <button onclick="redirectToNotion()"><u>notiondb</u></button>
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="placeholder">
+        <h1>hello :3</h1>
+    </div>
+
+    <div class="center" id="overview">
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+        <div>
+            <img src="" alt="" id="thumb-gallery">
+            <p>name</p>
+        </div>
+    </div>
+
+    <div class="center" id="sections">
+        <img src="" alt="inside lense" id="banners"> <br>
+        <a href="inside+lense.html">a</a> <br>
+        <img src="" alt="oddity circle" id="banners"> <br>
+        <a href="oddity_circle.html">a</a> <br>
+    </div>
+
+    <script>
+        function redirectToNotion() {
+            window.open("https://rokoimps101.notion.site/OC-Bunker-Databases-235f339555b2402e9512dc22e21a4a5c?pvs=4");
+        }
+
+        function showDiv(divId) {
+            var divs = document.querySelectorAll("#placeholder, #overview, #sections");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "none";
+            }
+
+            var div = document.getElementById(divId);
+            div.style.display = "block";
+
+            var divPholder = document.getElementById("placeholder");
+            divPholder.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
